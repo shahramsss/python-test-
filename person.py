@@ -9,4 +9,3 @@ class Person:
     def email (self):
         return f'{self.f_name}@gmail.com'
 
-
