@@ -1,3 +1,4 @@
+import pytest
 import unit_test
 
 
@@ -9,3 +10,8 @@ def test_subtract():
 
 def test_multiply():
     assert unit_test.multiply(4,5) == 20 
+
+def test_division():
+    assert unit_test.division(15 , 3)
+    with pytest.raises(ZeroDivisionError):
+        unit_test.division(5 , 0)
